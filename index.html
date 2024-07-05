@@ -409,6 +409,10 @@
         </div>
       </section>
     </main>
+    <!-- Modal -->
+    <div class="modal-overlay">
+      <div class="modal"></div>
+    </div>
     <footer class="footer">
       <div class="container">
         <div class="footer-info">
@@ -453,6 +457,23 @@
             </li>
           </ul>
         </div>
+        <form class="subscribe-form">
+          <label class="subscribe-label"
+            ><span class="subscribe-text">Subscribe</span>
+            <input
+              class="subscribe-input"
+              type="email"
+              name="user_email"
+              placeholder="E-mail"
+            />
+          </label>
+          <button class="subscribe-button" type="submit">
+            Subscribe
+            <svg class="subscribe-icon" width="24" height="24">
+              <use href="../goit-markup-hw-05/images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
   </body>
