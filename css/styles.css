@@ -592,6 +592,13 @@ fieldset {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .modal {
@@ -716,14 +723,37 @@ fieldset {
 }
 
 .fieldset-two {
-  display: flex;
   margin-left: 24px;
-  margin-right: 24px;
   margin-bottom: 24px;
+  display: flex;
+  gap: 8px;
 }
 
-.checkbox {
+.icon-accept-border {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  cursor: pointer;
+  padding: 4px 3px;
   margin-right: 8px;
+  display: inline-flex;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-accept {
+  fill: none;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-accept-border:active {
+  background-color: #404bbf;
+  border: 1px solid #404bbf;
+}
+
+.icon-accept-border:active .icon-accept {
+  fill: #f4f4fd;
 }
 
 .checkbox-text {
@@ -761,6 +791,7 @@ fieldset {
   text-align: center;
   color: #fff;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .send-button:hover,
