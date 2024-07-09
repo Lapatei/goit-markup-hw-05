@@ -535,13 +535,7 @@
             </div>
           </div>
           <div class="fieldset-two">
-            <input
-              class="checkbox-input"
-              type="hidden"
-              name="user-privacy"
-              value="true"
-              id="user-privacy"
-            /><label class="checkbox-label" for="user-privacy"
+            <label class="checkbox-label" for="user-privacy"
               ><span class="icon-accept-border">
                 <svg class="icon-accept" width="10" height="8">
                   <use
@@ -549,7 +543,13 @@
                   ></use></svg></span
               >I accept the terms and conditions of the
               <a class="privacy-policy" href="">Privacy Policy</a></label
-            >
+            ><input
+              class="checkbox-input"
+              type="hidden"
+              name="user-privacy"
+              value="true"
+              id="user-privacy"
+            />
           </div>
           <button class="send-button" type="submit">Send</button>
         </form>
